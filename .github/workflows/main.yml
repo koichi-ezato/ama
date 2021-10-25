@@ -14,7 +14,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
+
     strategy:
       matrix:
         node-version: [14.x]
@@ -29,9 +29,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        npm run build --if-present -- --prod
-        npm test -- --watch=false --browsers=ChromeHeadless
-        cp -a {angular.jsonのoutputPath}/index.html {angular.jsonのoutputPath}/404.html
+        npm run build --prod
       env:
         CI: true
     - name: Deploy 🚀
