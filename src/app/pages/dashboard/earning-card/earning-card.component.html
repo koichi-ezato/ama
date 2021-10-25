@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title *ngIf="flipped==='active'">Earnings</mat-card-title>
+    <mat-select *ngIf="flipped==='inactive'" [(value)]="selected" (valueChange)="earningCardFront.changeCurrency($event);earningCardBack.changeCurrency($event)">
+      <mat-option value="bitcoin">Bitcoin</mat-option>
+      <mat-option value="tether">Tether</mat-option>
+      <mat-option value="ethereum">Ethereum</mat-option>
+    </mat-select>
+    <span class="spacer"></span>
+    <button mat-button (click)="toggleView()">
+      <mat-icon *ngIf="flipped==='inactive'">arrow_right</mat-icon>
+      <mat-icon *ngIf="flipped==='active'">arrow_left</mat-icon>
+    </button>
+  </mat-card-header>
+  <mat-card-content [@flipState]="flipped">
+    <ama-earning-card-front #earningCardFront></ama-earning-card-front>
+    <ama-earning-card-back #earningCardBack></ama-earning-card-back>
+  </mat-card-content>
+</mat-card>

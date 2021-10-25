@@ -1,0 +1,17 @@
+<mat-toolbar color="white">
+  <img routerLink="/" alt="Angular Material Admin" src="assets/logo_transparent.png">
+  <a mat-button routerLink="/">{{title}}</a>
+  <span class="spacer"></span>
+  <span>
+    <button mat-button><mat-icon>search</mat-icon></button>
+    <button mat-button><mat-icon>email</mat-icon></button>
+    <button mat-button><mat-icon>notifications</mat-icon></button>
+    <button mat-button [matMenuTriggerFor]="userInfo">
+      <mat-icon matTooltip="User info">account_circle</mat-icon>
+    </button>
+    <mat-menu #userInfo="matMenu">
+      <button mat-menu-item><mat-icon>account_circle</mat-icon> Profile</button>
+      <button mat-menu-item><mat-icon>exit_to_app</mat-icon> Log out</button>
+    </mat-menu>
+  </span>
+</mat-toolbar>

@@ -1,0 +1,11 @@
+table {
+  width: 100%;
+}
+.table-container {
+  height: 300px;
+  max-width: 100%;
+  overflow: auto;
+}
+mat-icon {
+  vertical-align: inherit;
+}

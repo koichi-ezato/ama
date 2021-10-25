@@ -1,0 +1,50 @@
+.primary-header {
+  background: #3f51b5;
+}
+.primary-header h1 {
+  color: hsla(0,0%,100%,.87);
+  font-weight: 300;
+  margin: 0;
+  padding: 28px 8px;
+  font-size: 20px;
+}
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.sidenav-toggle {
+  padding: 0;
+  margin: 8px;
+  min-width: 64px;
+}
+.sidenav-toggle mat-icon {
+  font-size: 30px;
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+  color: #fff;
+}
+@media (max-width: 1366px) {
+  .page-header {
+    padding-left: 0;
+  }
+  h1 {
+    padding: 24px 8px;
+    font-size: 20px;
+  }
+  .sidenav-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}

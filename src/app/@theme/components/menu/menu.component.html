@@ -1,0 +1,11 @@
+<mat-accordion [multi]="isMulti">
+  <mat-expansion-panel *ngFor="let menuItem of menuItems" [expanded]="menuItem.expanded" class="mat-elevation-z0">
+    <mat-expansion-panel-header *ngIf="menuItem.hasOwnProperty('children')">
+      <mat-panel-title>
+        <mat-icon>{{menuItem.icon}}</mat-icon> {{menuItem.title}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <a *ngFor="let child of menuItem.children" mat-list-item routerLink="{{child.link}}"><mat-icon>{{child.icon}}</mat-icon> {{child.title}}</a>
+    <a *ngIf="!menuItem.hasOwnProperty('children')" mat-list-item routerLink="{{menuItem.link}}"><mat-icon>{{menuItem.icon}}</mat-icon> {{menuItem.title}}</a>
+  </mat-expansion-panel>
+</mat-accordion>
