@@ -56,7 +56,9 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/ama/",
+              "deployUrl": "/ama/"
             },
             "development": {
               "buildOptimizer": false,
