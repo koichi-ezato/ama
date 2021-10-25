@@ -1,0 +1,89 @@
+{
+  "configVersion": 1,
+  "timestamp": 1635147904397,
+  "index": "/ama/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/ama/197.f38c4eae9e852d45c454.js",
+        "/ama/330.8899ccab6a9c16eb903a.js",
+        "/ama/favicon.ico",
+        "/ama/index.html",
+        "/ama/main.a1945f83ad7e9d96d081.js",
+        "/ama/manifest.webmanifest",
+        "/ama/polyfills.12d9d81b565dc4f0c14e.js",
+        "/ama/runtime.46ee3c332326feeb8ad0.js",
+        "/ama/styles.71fe1f15a3a4427b543b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/ama/assets/icons/icon-128x128.png",
+        "/ama/assets/icons/icon-144x144.png",
+        "/ama/assets/icons/icon-152x152.png",
+        "/ama/assets/icons/icon-192x192.png",
+        "/ama/assets/icons/icon-384x384.png",
+        "/ama/assets/icons/icon-512x512.png",
+        "/ama/assets/icons/icon-72x72.png",
+        "/ama/assets/icons/icon-96x96.png",
+        "/ama/assets/images/default.png",
+        "/ama/assets/logo_transparent.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/ama/197.f38c4eae9e852d45c454.js": "8abaf1adee04f6650d5772d5f7edf2f74860e1d5",
+    "/ama/330.8899ccab6a9c16eb903a.js": "fcda3a1b4d88cd10fd4c4d290611a3b2ef2d0fae",
+    "/ama/assets/icons/icon-128x128.png": "0a8c2eef94400435a5c1497f2f4d4e35b675a04c",
+    "/ama/assets/icons/icon-144x144.png": "1d4ce4457d597f7f01d05a6a480e2addfdab65ee",
+    "/ama/assets/icons/icon-152x152.png": "a030867ab2f4fd03a9ce681944da09e7137a71de",
+    "/ama/assets/icons/icon-192x192.png": "94ff547a9922105e6f0bb08c1d50bcbae9c5351f",
+    "/ama/assets/icons/icon-384x384.png": "6112e92f29c72ef38d0b0069385e736bc55b76d5",
+    "/ama/assets/icons/icon-512x512.png": "bb378e466ee8326ce205d9788cd5ee490f212a63",
+    "/ama/assets/icons/icon-72x72.png": "8f166e0049f6a306e2764185e2e2f98d17554d99",
+    "/ama/assets/icons/icon-96x96.png": "013f721b5cdace98afa8e5a3c15712d196bfc4da",
+    "/ama/assets/images/default.png": "9d473769940ae0ef33023db3f81b0eca48796356",
+    "/ama/assets/logo_transparent.png": "d77191b68c4ab0037197eb40f50f412c9f1861b3",
+    "/ama/favicon.ico": "524eccc73ed22f745cc462a3406d039cf68b3226",
+    "/ama/index.html": "7803271b93a1c451f25b24bc30268f7c1339e4ac",
+    "/ama/main.a1945f83ad7e9d96d081.js": "d47fb152131ad4a1b1e46f549d09cf675f5f1ce3",
+    "/ama/manifest.webmanifest": "5827b3450dc3bab57229a93073f4a0920f9a54e7",
+    "/ama/polyfills.12d9d81b565dc4f0c14e.js": "0800adac963e529583f0e5fc8c09346a2846e70b",
+    "/ama/runtime.46ee3c332326feeb8ad0.js": "f2666d42521ae204046f0d059c06c8c585b0ad10",
+    "/ama/styles.71fe1f15a3a4427b543b.css": "85b9b710ba3193c1abfa5a10cd49aa39913ef657"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
